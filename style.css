@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Sarala&display=swap');
+
+main {
+    overflow: hidden;
+}
+.body {
+    height: 100vh;
+    width: 100vw;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+.cabecalho-imagem-logo {
+    height: 120px;
+}
+
+.cabecalho-menu {
+display: flex;
+gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: rgb(163, 86, 15);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo-principal {
+    display: flex;
+      align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.counteudo-principal-imagem {
+    height: 350px;
+    overflow: hidden;
+}
+
+.conteudo-secundario {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+
+.titulo {
+    color:rgb(19, 16, 16)
+}
+
+.tags {
+     font-weight: 300;
+    font-size: 17px;
+    color: rgb(119, 64, 1);
+}
+.content {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.navigation {
+        bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius:6px ;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slide {
+    display: flex;
+    height: 100%;
+    width: 500%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 14,2857143;
+    transition: .7s;
+}
+
+#slide1:checked ~ .img1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .img1 {
+    margin-left: -10%;
+}
+
+#slide3:checked ~ .img1 {
+    margin-left: -15%;
+}
+
+#slide4:checked ~ .img1 {
+    margin-left: -17%;
+}
+
